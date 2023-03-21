@@ -28,8 +28,8 @@ h2{
     font-size: 5px;
     font-weight: bold;
     position: absolute;
-    top: 400px;
-    left: 50px;
+    top: 470px;
+    left: 70px;
 }
 
 h3{
@@ -48,7 +48,7 @@ button {
     border-radius: 110px;
     cursor: pointer;
     position: absolute;
-    top: 350px;
+    top: 420px;
     left: 220px;
 }
 
