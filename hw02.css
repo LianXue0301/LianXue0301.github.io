@@ -11,7 +11,7 @@ html {
 body {
     overflow: hidden;
     height: inherit;
-    background-color: rgb(250, 248, 248);
+    background-color: rgba(167, 79, 79, 0.71);
 }
 
 h1 {
@@ -28,8 +28,8 @@ h2{
     font-size: 5px;
     font-weight: bold;
     position: absolute;
-    top: 470px;
-    left: 70px;
+    top: 450px;
+    left: 50px;
 }
 
 h3{
@@ -48,7 +48,7 @@ button {
     border-radius: 110px;
     cursor: pointer;
     position: absolute;
-    top: 420px;
+    top: 400px;
     left: 220px;
 }
 
