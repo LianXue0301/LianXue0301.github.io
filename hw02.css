@@ -23,7 +23,7 @@ h1 {
     text-align: center;
 }
 
-p{
+h4{
     text-shadow: 0 0 4px white;
     font-size: 20px;
     font-weight: bold;
@@ -32,14 +32,23 @@ p{
     left: 900px;
 }
 
+h5{
+    text-shadow: 0 0 4px white;
+    font-size: 5px;
+    font-weight: bold;
+    position: absolute;
+    top: 400px;
+    left: 50px;
+}
+
 button {
     border: 0;
     background-color: #7c56ce;
-    color: #000000;
+    color: #ffffff;
     border-radius: 110px;
     cursor: pointer;
     position: absolute;
-    top: 500px;
+    top: 350px;
     left: 220px;
 }
 
@@ -48,11 +57,18 @@ button:hover {
     background-color: #ddd;
 }
 
+#img03
+{
+    position: absolute;
+    top: 500px;
+    left: 20px;
+}
+
 #count {
     font-size: 50px;
     font-weight: bold;
     position: absolute;
-    top: 650px;
+    top: 530px;
     left: 230px;
 }
 
