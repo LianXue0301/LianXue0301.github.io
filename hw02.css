@@ -23,22 +23,22 @@ h1 {
     text-align: center;
 }
 
-h4{
-    text-shadow: 0 0 4px white;
-    font-size: 20px;
-    font-weight: bold;
-    position: absolute;
-    top: 200px;
-    left: 900px;
-}
-
-h5{
+h2{
     text-shadow: 0 0 4px white;
     font-size: 5px;
     font-weight: bold;
     position: absolute;
     top: 400px;
     left: 50px;
+}
+
+h3{
+    text-shadow: 0 0 4px white;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 200px;
+    left: 900px;
 }
 
 button {
