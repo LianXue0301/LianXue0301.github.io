@@ -1,0 +1,108 @@
+html,
+body {
+    margin: 0;
+}
+
+html {
+    font-family: "微軟正黑體" 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    height: inherit;
+    background-color: rgb(250, 248, 248);
+}
+
+h1 {
+    height: auto;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 4px white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h4{
+    text-shadow: 0 0 4px white;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 200px;
+    left: 900px;
+}
+
+h5{
+    text-shadow: 0 0 4px white;
+    font-size: 5px;
+    font-weight: bold;
+    position: absolute;
+    top: 400px;
+    left: 50px;
+}
+
+button {
+    border: 0;
+    background-color: #7c56ce;
+    color: #ffffff;
+    border-radius: 110px;
+    cursor: pointer;
+    position: absolute;
+    top: 350px;
+    left: 220px;
+}
+
+button:hover {
+    color: #000000;
+    background-color: #ddd;
+}
+
+#img03
+{
+    position: absolute;
+    top: 500px;
+    left: 20px;
+}
+
+#count {
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 530px;
+    left: 230px;
+}
+
+#gif
+{
+    position: absolute;
+    top: 250px;
+    left: 900px;
+}
+
+#link1
+{
+    position: absolute;
+    top: 550px;
+    left: 900px;
+}
+
+#link2
+{
+    position: absolute;
+    top: 550px;
+    left: 1020px;
+}
+
+#link3
+{
+    position: absolute;
+    top: 550px;
+    left: 1100px;
+}
+
+#link4
+{
+    position: absolute;
+    top: 550px;
+    left: 1200px;
+}
