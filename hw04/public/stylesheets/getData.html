@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>金農一等西螺米</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+  <h1>金農一等西螺米平均價格</h1>
+  <form id="average">
+    <label for="date">日期</label>
+    <input type="text" id="date" name="date">
+    <label for="name">商品名稱</label>
+    <input type="text" id="name" name="name">
+    <label for="price">商品價格</label>
+    <input type="text" id="price" name="price">
+
+    <button type="submit">送出</button>
+  </form>
+
+  <div id="app">
+    <button v-on:click="handleClick">顯示資料</button>
+    <table>
+      <thead>
+        <tr>
+          <th>date</th>
+          <th>name</th>
+          <th>price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="item in data">
+          <td>{{ item.date }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.price }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p id="log"></p>
+
+  <script>
+    const formm = document.getElementById('average');
+    formm.addEventListener('submit', handleSubmit);
+
+    async function handleSubmit(event) {
+      event.preventDefault();
+
+
+      const formData = new FormData(formm);
+
+      const jsonData = {};
+      for (const [key, value] of formData.entries()) {
+        jsonData[key] = value;
+      }
+      const jsonString = JSON.stringify(jsonData);
+      console.log(jsonString);
+
+
+      const url = "http://localhost:3000/api";
+      try {
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: jsonString,
+        });
+        const data = await response;
+
+
+        console.log("成功", data);
+        //const log = document.getElementById('log');
+        //log.innerHTML = JSON.stringify(data);
+
+      } catch (error) {
+
+        console.log("錯誤", error);
+      }
+    }
+
+    const app = Vue.createApp({
+    data() {
+      return {
+        data: []
+      };
+    },
+    methods: {
+      async handleClick() {
+        console.log("data");
+
+        const url = "http://localhost:3000/api"; // 資料傳送到的 URL
+        try {
+          const response = await fetch(url, {
+            method: 'GET',
+          });
+          const res_data = await response.json();
+          this.data = res_data ;
+          console.log("成功", res_data );
+        } catch (error) {
+          console.log("錯誤", error);
+        }
+      }
+    }
+  });
+
+  app.mount('#app');
+  </script>
+
+
+</body>
+
+</html>

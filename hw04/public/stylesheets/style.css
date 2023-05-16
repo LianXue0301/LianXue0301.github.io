@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+button {
+  background-color: rgb(66, 96, 216);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 40px;
+}
+
+table {
+  width: 75%;
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+th {
+  background-color: #af874c;
+  color: white;
+}
